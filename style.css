@@ -1,0 +1,15 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('images/Landscapes/Rain/1.jpg');
+  background-color: black;
+  background-size: cover;
+}
+
+.quiz {
+  margin-top: 35px;
+  background-color: black;
+  color: #F0F0F0;
+  display: none;
+  border: 2px solid #CFCFCF;
+  padding: 10px;
+  border-radius: 5px;
+}
