@@ -10,7 +10,7 @@ $("#start").click(function() {
 
 
 var questions = [
-  {'question': 'Out of these, which is your favorite?', 'options': ['Animals', 'Landscapes', 'Memes']},
+  {'question': 'Out of these, which is your favorite?', 'options': ['Animals', 'Landscapes', /*'Memes'*/]},
   {'question': "What's your favorite animal?", 'options': ['Birds', 'Cats', 'Dogs', 'Fishes']},
   {'question': "Where do you like to be?", 'options': ['Beaches', 'Cities', 'Islands', 'Mountains', 'Rainy places', 'Rivers']},
 
