@@ -29,6 +29,16 @@ var quotes = [
   {'quote': "Worrying is like paying interest on a debt you may never owe.", 'author': 'Unknown'},
   {'quote': "You don't set out to build a wall. You don't say 'I'm going to build the biggest, baddest, greatest wall that's ever been built.' You don't start there. You say, 'I'm going to lay this brick as perfectly as a brick can be laid. You do that every single day. And soon you have a wall.", 'author': 'Will Smith'},
   {'quote': "There are two rules to success: <ol><li>Never tell anyone everything you know.</li><ol>", 'author': 'Roger H.Lincoln'},
+  {'quote': "The time to relax is when you don’t have time for it.", 'author': 'Sydney J. Harris'},
+  {'quote': "Happiness is a choice. You can choose to be happy. There's going to be stress in life, but it's your choice whether you let it affect you or not. ", 'author': 'Valerie Bertinelli'},
+  {'quote': "The secret of getting ahead is getting started.", 'author': 'Mark Twain'},
+  {'quote': "Start where you are. Use what you have. Do what you can.", 'author': 'Arthur Ashe'},
+  {'quote': "By failing to prepare, you are preparing to fail. ", 'author': 'Benjamin Franklin'},
+  {'quote': "Set your goals high, and don't stop till you get there. ", 'author': 'Bo Jackson'},
+  {'quote': "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious. ", 'author': 'Stephen Hawking'},
+  {'quote': "A goal is a dream with a deadline. ", 'author': 'Napoleon Hill'},
+  {'quote': "You just can't beat the person who never gives up. ", 'author': 'Babe Ruth'},
+  {'quote': "Every exit is an entry somewhere else. ", 'author': 'Tom Stoppard'},
 ];
 
 
