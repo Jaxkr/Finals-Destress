@@ -213,7 +213,7 @@ function setWallpaper() {
   console.log(roll);
   console.log(PHOTOS_POOL);
   console.log(PHOTOS_POOL[roll]);
-  var url = '/images/' + PHOTOS_POOL[roll];
+  var url = 'images/' + PHOTOS_POOL[roll];
   $('body').css("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" + url + "')");
   $('body').css("background-size", "cover");
 }
