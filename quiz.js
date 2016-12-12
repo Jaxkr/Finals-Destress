@@ -138,7 +138,7 @@ function processQuizResponse(number, response) {
       case "Yes, I'm not stressed at all.":
         displayQuizQuestion(5);
         break;
-      case "No":
+      case "No.":
         displayQuizQuestion(6);
         break;
     }
