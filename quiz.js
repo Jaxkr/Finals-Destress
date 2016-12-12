@@ -92,7 +92,7 @@ function processQuizResponse(number, response) {
         PHOTOS_POOL = bird_photos;
         break;
     }
-    setInterval(setWallpaper, 15000);
+    setInterval(setWallpaper, 20000);
     setWallpaper();
     displayQuizQuestion(3);
 
@@ -119,7 +119,7 @@ function processQuizResponse(number, response) {
         PHOTOS_POOL = river_photos;
         break;
     }
-    setInterval(setWallpaper, 15000);
+    setInterval(setWallpaper, 20000);
     setWallpaper();
     displayQuizQuestion(3);
   }
