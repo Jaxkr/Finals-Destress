@@ -28,7 +28,7 @@ var quotes = [
   {'quote': "How Can Mirrors Be Real If Our Eyes Aren't Real", 'author': 'Jaden Smith'},
   {'quote': "Worrying is like paying interest on a debt you may never owe.", 'author': 'Unknown'},
   {'quote': "You don't set out to build a wall. You don't say 'I'm going to build the biggest, baddest, greatest wall that's ever been built.' You don't start there. You say, 'I'm going to lay this brick as perfectly as a brick can be laid. You do that every single day. And soon you have a wall.", 'author': 'Will Smith'},
-  {'quote': "There are two rules to success: <ol><li>Never tell everyone everything you know.</li><ol>", 'author': 'Roger H.Lincoln'},
+  {'quote': "There are two rules to success: <ol><li>Never tell anyone everything you know.</li><ol>", 'author': 'Roger H.Lincoln'},
 ];
 
 
