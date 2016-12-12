@@ -10,7 +10,7 @@ $("#start").click(function() {
 
 
 var questions = [
-  {'question': 'Out of these, which is your favorite?', 'options': ['Animals', 'Landscapes', /*'Memes'*/]},
+  {'question': 'Out of these, which is your favorite?', 'options': ['Animals', 'Landscapes']},
   {'question': "What's your favorite animal?", 'options': ['Birds', 'Cats', 'Dogs', 'Fishes']},
   {'question': "Where do you like to be?", 'options': ['Beaches', 'Cities', 'Islands', 'Mountains', 'Rainy places', 'Rivers']},
 
@@ -18,7 +18,7 @@ var questions = [
   {'question': "Really? You're not stressed at all?", 'options': ['Yes', 'No']}, //4
   {'question': "Then I'm not really sure what you're doing here. You're sure you're not completely relaxed?", 'options': ["OK, maybe I'm a little tense."]},
 
-  {'question': "Let's do some relaxation exercises.<br>Would you like some nice rain noise? (recommended)", 'options': ["Yes, please.", "No, I'm fine."]},//6
+  {'question': "Let's do some relaxation exercises.<br>Would you like some nice rain noise? (strongly recommended)", 'options': ["Yes, please.", "What are the other options?"]},//6
   {'question': "How about some regular old noise? What kind would you like?<p style='font-size: 12px;'>White noise is the highest pitched, brown noise is the lowest pitched.</p>", 'options': ["White noise", "Pink noise", "Brown noise", "I prefer silence."]},//7
   {'question': "Really? No noise for you? How about some <a href='https://www.youtube.com/watch?v=p_5yt5IX38I' target='_blank'>Mongolian throat singing</a>?", 'options': ["I'm good."]},//8
 
@@ -75,9 +75,6 @@ function processQuizResponse(number, response) {
       case "Landscapes":
         displayQuizQuestion(2);
         break;
-      case "Memes":
-        window.location = 'https://www.reddit.com/r/wholesomememes/';
-        break;
     }
   }
   else if (number == 1) {
@@ -95,7 +92,7 @@ function processQuizResponse(number, response) {
         PHOTOS_POOL = bird_photos;
         break;
     }
-    setInterval(setWallpaper, 10000);
+    setInterval(setWallpaper, 15000);
     setWallpaper();
     displayQuizQuestion(3);
 
@@ -122,7 +119,7 @@ function processQuizResponse(number, response) {
         PHOTOS_POOL = river_photos;
         break;
     }
-    setInterval(setWallpaper, 10000);
+    setInterval(setWallpaper, 15000);
     setWallpaper();
     displayQuizQuestion(3);
   }
@@ -156,7 +153,7 @@ function processQuizResponse(number, response) {
         createRainymoodIframe();
         displayQuizQuestion(9);
         break;
-      case "No, I'm fine.":
+      case "What are the other options?":
         displayQuizQuestion(7);
         break;
     }
@@ -230,12 +227,14 @@ function createRainymoodIframe() {
   iframe.setAttribute('id', 'rainy');
   iframe.src = "https://rainymood.com/";
   document.body.appendChild(iframe);
+
+  $('#killsound').fadeIn();
 }
 
 function createWhitenoiseIframe(color) {
   var iframe = document.createElement('iframe');
   iframe.setAttribute('style', 'display: none;');
-  iframe.setAttribute('id', 'rainy');
+  iframe.setAttribute('id', 'white');
   switch(color) {
     case "brown":
       iframe.src = "https://playnoise.com/snd/brown_noise.mp3";
@@ -248,6 +247,7 @@ function createWhitenoiseIframe(color) {
       break;
   }
   document.body.appendChild(iframe);
+  $('#killsound').fadeIn();
 }
 
 
@@ -266,3 +266,11 @@ var rain_photos = ['Landscapes/Rain/1.jpg', 'Landscapes/Rain/2.jpg', 'Landscapes
 var river_photos = ['Landscapes/Rivers/1.jpg', 'Landscapes/Rivers/2.jpg', 'Landscapes/Rivers/3.jpg', 'Landscapes/Rivers/4.jpg', 'Landscapes/Rivers/5.jpg', 'Landscapes/Rivers/6.jpg', 'Landscapes/Rivers/7.jpg', 'Landscapes/Rivers/8.jpg', 'Landscapes/Rivers/9.jpg']
 
 var PHOTOS_POOL = fish_photos;
+
+
+
+$('#killsound').click(function() {
+  $('#white').remove();
+  $('#rainy').remove();
+  $(this).fadeOut();
+});

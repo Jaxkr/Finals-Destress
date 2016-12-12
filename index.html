@@ -40,7 +40,18 @@
       </p>
 
       <br><br>
-      <p><a style="cursor:pointer;" onclick="$('#quiz').fadeOut(function() { $('#splash').fadeIn('slow'); });">Return to homepage.</a></p>
+      <div class="row">
+        <div class="col-xs-6">
+          <p style="text-align: left">
+            <a style="cursor:pointer;" onclick="$('#quiz').fadeOut(function() { $('#splash').fadeIn('slow'); });">Return to homepage.</a>
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <p style="text-align:right">
+            <button id="killsound" type="button" class="btn btn-info btn-sm" style="display: none;">Stop all sounds</button>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
