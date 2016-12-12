@@ -18,7 +18,7 @@ var questions = [
   {'question': "Really? You're not stressed at all?", 'options': ['Yes', 'No']}, //4
   {'question': "Then I'm not really sure what you're doing here. You're sure you're not completely relaxed?", 'options': ["OK, maybe I'm a little tense."]},
 
-  {'question': "Let's do some relaxation exercises.<br>Would you like some nice rain noise? (strongly recommended)", 'options': ["Yes, please.", "What are the other options?"]},//6
+  {'question': "Let's do some relaxation exercises.<br>Would you like some nice rain noise? (strongly recommended)", 'options': ["<i class='fa fa-headphones' aria-hidden='true'></i> Yes, please.", "What are the other options?"]},//6
   {'question': "How about some regular old noise? What kind would you like?<p style='font-size: 12px;'>White noise is the highest pitched, brown noise is the lowest pitched.</p>", 'options': ["White noise", "Pink noise", "Brown noise", "I prefer silence."]},//7
   {'question': "Really? No noise for you? How about some <a href='https://www.youtube.com/watch?v=p_5yt5IX38I' target='_blank'>Mongolian throat singing</a>?", 'options': ["I'm good."]},//8
 
@@ -149,7 +149,7 @@ function processQuizResponse(number, response) {
 
   else if (number == 6) {
     switch (response) {
-      case "Yes, please.":
+      case "<i class='fa fa-headphones' aria-hidden='true'></i> Yes, please.":
         createRainymoodIframe();
         displayQuizQuestion(9);
         break;
@@ -213,7 +213,7 @@ function setWallpaper() {
   var url = 'images/' + PHOTOS_POOL[roll];
 
   $('#background').fadeOut('slow', function() {
-    $('#background').css("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" + url + "')");
+    $('#background').css("background", "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('" + url + "')");
     $('#background').css("background-size", "cover");
     setTimeout(function() {
       $('#background').fadeIn('slow');

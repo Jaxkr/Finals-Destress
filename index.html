@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>Finals Destress</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -13,7 +15,7 @@
   <div class="container">
     <div id="splash">
       <div class="visible-xs">
-        <p class="lead">This site works best when used on a full-size computer!</p>
+        <div class="alert alert-warning" role="alert"><i class="fa fa-desktop" aria-hidden="true"></i> <b>This website works best on a full-size computer!</b><p>Sound on this site does not work on most mobile devices</div>
       </div>
       <div class="row">
         <div class="col-sm-6">
@@ -29,7 +31,7 @@
             <h1>Niwot Destress</h1>
             <p>Feeling stressed? Take this brief quiz so we can provide you with the right resources!</p>
 
-            <button id="start" class="btn btn-lg btn-primary">Start</button>
+            <button id="start" class="btn btn-lg btn-primary">Start <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
           </div>
           <p style="text-align: center" class="lead">You can also utilize the chat room below:</p>
           <div style="background-color: #0F0F0F; border-radius: 5px;">
@@ -57,7 +59,7 @@
         </div>
         <div class="col-xs-6">
           <p style="text-align:right">
-            <button id="killsound" type="button" class="btn btn-info btn-sm" style="display: none;">Stop all sounds</button>
+            <button id="killsound" type="button" class="btn btn-info btn-sm" style="display: none;"><i class="fa fa-volume-off" aria-hidden="true"></i> Stop all sounds</button>
           </p>
         </div>
       </div>
