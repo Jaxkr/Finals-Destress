@@ -15,7 +15,7 @@ var questions = [
   {'question': "Where do you like to be?", 'options': ['Beaches', 'Cities', 'Islands', 'Mountains', 'Rainy places', 'Rivers']},
 
   {'question': "Are you feeling stressed or anxious?", 'options': ['Yes', 'No']},
-  {'question': "Really? You're not stressed at all?", 'options': ['Yes', 'No']}, //4
+  {'question': "Really? You're not stressed at all?", 'options': ["Yes, I'm not stressed at all.", "No."]}, //4
   {'question': "Then I'm not really sure what you're doing here. You're sure you're not completely relaxed?", 'options': ["OK, maybe I'm a little tense."]},
 
   {'question': "Let's do some relaxation exercises.<br>Would you like some nice rain noise? (strongly recommended)", 'options': ["<i class='fa fa-headphones' aria-hidden='true'></i> Yes, please.", "What are the other options?"]},//6
@@ -135,7 +135,7 @@ function processQuizResponse(number, response) {
   }
   else if (number == 4) {
     switch (response) {
-      case "Yes":
+      case "Yes, I'm not stressed at all.":
         displayQuizQuestion(5);
         break;
       case "No":
