@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div id="background"></div>
   <div class="container">
     <div id="splash">
       <div class="row">
@@ -39,7 +40,7 @@
       </p>
 
       <br><br>
-      <p><a href="/">Stop noise and return to homepage.</a></p>
+      <p><a style="cursor:pointer;" onclick="$('#quiz').fadeOut(function() { $('#splash').fadeIn('slow'); });">Return to homepage.</a></p>
     </div>
   </div>
 
