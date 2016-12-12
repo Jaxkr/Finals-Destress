@@ -214,8 +214,14 @@ function setWallpaper() {
   console.log(PHOTOS_POOL);
   console.log(PHOTOS_POOL[roll]);
   var url = 'images/' + PHOTOS_POOL[roll];
-  $('body').css("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" + url + "')");
-  $('body').css("background-size", "cover");
+
+  $('#background').fadeOut('slow', function() {
+    $('#background').css("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" + url + "')");
+    $('#background').css("background-size", "cover");
+    setTimeout(function() {
+      $('#background').fadeIn('slow');
+    }, 200)
+  })
 }
 
 function createRainymoodIframe() {
